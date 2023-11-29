@@ -1,6 +1,6 @@
 version: '3.3'
 
-services:  
+services:
 
   joomla:
 
@@ -18,9 +18,9 @@ services:
 
     environment:
 
-      JOOMLA_DB_HOST: wordpressdb-zhiharko:3306
+      JOOMLA_DB_HOST: wordpressdb-zhiharko
 
-      JOOMLA_DB_PASSWORD: wordpress
+      JOOMLA_DB_PASSWORD: secret
 
   
 
