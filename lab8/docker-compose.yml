@@ -34,6 +34,28 @@ services:
 
   
 
+  joomla:
+
+    image: joomla
+
+    restart: always
+
+    links:
+
+      - wordpressdb-zhiharko:mysql
+
+    ports:
+
+      - 8080:80
+
+    environment:
+
+      JOOMLA_DB_HOST: wordpressdb-zhiharko:3306
+
+      JOOMLA_DB_PASSWORD: wordpress
+
+  
+
   wordpressdb-zhiharko:
 
       image: mariadb:latest
